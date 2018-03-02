@@ -46,7 +46,7 @@
 }
 
 .main-header h2{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 30px;
   transition: all 0.3s ease 0s;
   margin-top: 0px;
@@ -54,12 +54,10 @@
   color: white;
 }
 
-.header-container{
-  width: 200px;
-  padding: 13px;
-  border-right: 1px solid white;
-  border-left: 1px solid white;
-  float: right;
+.header-container img{
+  float:right;
+  max-height: 40px;
+  padding-top: 5px;
 }
 
 .main-header h2:hover{
@@ -128,8 +126,6 @@
     text-decoration: none;
     display: block;
 }
-
-.navi-content-hidden a:hover {background-color: #ddd}
 
 .navi-content:hover .navi-content-hidden {
     display: block;
