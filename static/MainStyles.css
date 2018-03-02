@@ -19,7 +19,8 @@
 .main-header {
   width: 100%;
   position: fixed;
-  height: 50px;
+  height: 5%;
+  margin: 0;
   top: 0;
   overflow: hidden;
   border-bottom: 1px solid lightgrey;
@@ -40,7 +41,7 @@
 .header-container img{
   float: right;
   max-height: 40px;
-  padding-top: 7px;
+  padding-top: 5px;
   padding-right: 10px;
 }
 
@@ -83,6 +84,12 @@
 .logo {
     position: relative;
     float: left;
+}
+
+.logo h2{
+  font-family: 'Raleway', sans-serif;
+  float: inherit;
+  color: #32A3FF;
 }
 
 
