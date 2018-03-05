@@ -32,9 +32,9 @@
 
 .header-container img{
   float: right;
-  max-height: 41px;
-  padding-top: 5px;
-  padding-right: 10px;
+  margin-right: 10px;
+  max-height: 36px;
+  max-width: 36px;
 }
 
 .header-container img:hover{
@@ -45,6 +45,9 @@
 .header-container{
   border-left: 3px solid white;
   height: 50px;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-right: 10px;
 }
 
 
