@@ -19,7 +19,7 @@
 .main-header {
   width: 100%;
   position: fixed;
-  height: 5%;
+  max-height: 5%;
   margin: 0;
   top: 0;
   overflow: hidden;
@@ -32,9 +32,9 @@
 
 .header-container img{
   float: right;
-  margin-right: 10px;
-  max-height: 36px;
   max-width: 36px;
+  min-width: 10px;
+  height: auto;
 }
 
 .header-container img:hover{
