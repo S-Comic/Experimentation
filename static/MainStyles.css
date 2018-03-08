@@ -23,31 +23,15 @@
   margin: 0;
   top: 0;
   overflow: hidden;
-  border-bottom: 1px solid lightgrey;
-  background-color: #FFFFFF;
+  border-bottom: 1px solid #e5e5e5;
+  background-color: ##fcfcfc;
   z-index: 0;
 }
 
 
 
-.header-container img{
-  float: right;
-  max-width: 36px;
-  min-width: 10px;
-  height: auto;
-}
-
-.header-container img:hover{
-  border-bottom: 3px solid #32A3FF;
-  transition: all 0.3s ease 0s;
-}
-
 .header-container{
-  border-left: 3px solid white;
   height: 50px;
-  padding-left: 10px;
-  padding-top: 5px;
-  padding-right: 10px;
 }
 
 
@@ -56,6 +40,31 @@
   text-decoration:none;
 }
 
+.header-container p{
+  font-family: 'Open Sans Condensed', sans-serif;
+  float: right;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 1px;
+  border-left: 1px solid #e5e5e5;
+  font-size: 35px;
+  margin: 0px;
+}
+
+.header-container p:hover{
+  color: white;
+  background-color: #32A3FF;
+  transition: all 0.3s ease 0s;
+}
+
+.header-container img{
+  float: left;
+  padding-top: 6px;
+  padding-right: 5px;
+  padding-left: 5px;
+  max-width: 40px;
+  max-height: 40px;
+}
 
 .spacer { margin-top: 75px; }
 
@@ -88,13 +97,13 @@
 .logo {
     position: relative;
     float: left;
+    background-color: #32A3FF;
+    padding-right: 5px;
+    height: 100px;
+    width: 45px;
+    border-right: 1px solid #e5e5e5;
 }
 
-.logo h2{
-  font-family: 'Raleway', sans-serif;
-  float: inherit;
-  color: #32A3FF;
-}
 
 
 /* MISC */
