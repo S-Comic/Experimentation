@@ -1,24 +1,42 @@
 {% include 'modules/fonts.html' %}
 
+<title>Sam - Surfing the web</title>
+
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<script>
+$(window).scroll(function() {
+    var headscroll = $(window).scrollTop();
+
+    if (headscroll >= 20) {
+        $(".main-header").addClass("shadow");
+    } else {
+        $(".main-header").removeClass("shadow");
+      }
+});
+</script>
+
 <link rel="stylesheet" type="text/css" href="/static/MainStyles.css">
 
 <header class="main-header" role="banner">
 <div class = "header-container">
 
 <a href = "\">
-<p style = "float: left; color: white; background-color: #32A3FF;">Flask</p>
+<p style = "float: left; color: white; background-color: #32A3FF;">Samuel Jule</p>
 </a>
 
 <a href = "/">
 <p>Home</p>
 </a>
 
-<a href = "/login/">
-<p>Login</p>
+<a href = "/writing/">
+<p>Writing</p>
 </a>
 
-<a href = "/navigation/">
-<p>Navigation</p>
+<a href = "https://github.com/S-Comic">
+<p>Coding</p>
 </a>
 
 </div>

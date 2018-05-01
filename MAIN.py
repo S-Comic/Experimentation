@@ -5,10 +5,10 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-@app.route('/login/')
-def hello():
-    return render_template('login.html')
+@app.route('/writing/')
+def writing():
+    return render_template('writing.html')
 
-@app.route('/navigation/')
-def navi():
-    return render_template('navigation.html')
+@app.route('/coding/')
+def coding():
+    return render_template('coding.html')
