@@ -1,3 +1,10 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
 /* --- Container --- */
 
 .container{
@@ -19,11 +26,12 @@
   color: #32A3FF;
   text-decoration:none;
 }
+
 /* --- HEADER --- */
 
 .main-header {
   width: 100%;
-  max-height: 65px;
+  max-height: 85px;
   margin: 0;
   top: 0;
   overflow: hidden;
@@ -82,7 +90,6 @@
 
 .spacer { margin-top: 75px; }
 
-
 /* --- FOOTER --- */
 
 .footer{
@@ -104,16 +111,6 @@
 
 /* --- NAVIGATION --- */
 
-.logo {
-    position: relative;
-    float: left;
-    background-color: #32A3FF;
-    padding-right: 5px;
-    height: 100px;
-    width: 45px;
-    border-right: 1px solid #e5e5e5;
-}
-
 .Footer_Container{
   margin-left: 20px;
   margin-right: 20px;
@@ -128,25 +125,62 @@
 
 /* MOBILE */
 
-@media screen and (max-width: 400px) {
-  .container p {
-    line-height: 80%;
+@media screen and (max-width: 1000px){
+  html,body
+  {
+      overflow-x: hidden;
   }
   .shadow{
-    position: fixed;
+    width: 100%;
+    max-height: 85px;
+    margin: 0;
+    top: 0;
+    position: static;
+    overflow: hidden;
+    background-color: #fcfcfc;
+    box-shadow: none;
+    border-radius: 0px;
+    z-index: 0;
+    transition: all 0.3s ease 0s;
+  }
+  .container{
+    padding-left: 7%;
+    padding-right: 7%;
   }
   .main-header{
-    height: 150px;
+    height: 200px;
+    border: none;
+    padding-left: 15%;
   }
   .main-header p{
     font-size: 50px;
+    top: 10px;
+    padding-left: 4%;
+    padding-right: 4%;
+    float: left;
   }
   .footer{
     height: 100px;
+    line-height: 100%;
+  }
+  .header-continer{
+    height: 65px;
+  }
+  .logo{
+    display: none;
+  }
+  .Footer_Container img{
+    float: left;
+    height: 60px;
+    margin-left: 13%;
+    width: auto;
+  }
+  .Text-Left{
+    display: none;
   }
 }
-
-/* MISC */
-html, body {
- margin: 0;
+@media screen and (max-width: 800px){
+  .Footer_Container img{
+    margin-left: 10%;
+  }
 }
