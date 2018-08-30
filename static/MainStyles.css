@@ -15,6 +15,22 @@ html,body
 
 /* LANDING SECTION */
 
+@keyframes arrowBob {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.arrow{
+  display: block;
+}
+
 .scrollLock{
   position: fixed;
   width: 100%;
@@ -63,10 +79,6 @@ html,body
   letter-spacing: 8px;
 }
 
-.landingHeader::before{
-  filter: blur(1px);
-}
-
 .headerRow{
   padding-top: 40vh;
   width: 60%;
@@ -91,18 +103,19 @@ html,body
 }
 .headerSocial img{
   height: auto;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
   width: 30%;
   margin-left: 35%;
   margin-right: 35%;
   padding: 5px;
   float: left;
 }
-.headerSocial img:hover{
-  margin-top: 15px;
+.icon:hover{
+  filter: opacity(30%);
 }
 .icon{
   width: 33.3%;
+  transition: all 0.5s ease-in-out;
 }
 
 .landingBox{
@@ -148,7 +161,7 @@ html,body
 	text-decoration:none;
 }
 .myButton:hover {
-	margin-top: 15px;
+	filter: opacity(30%);
 }
 .myButton:active {
 	position:relative;
@@ -162,7 +175,7 @@ html,body
   background-color: white;
   margin-left: 5%;
   margin-right: 5%;
-  margin-top: 95vh;
+  margin-top: 101vh;
   margin-bottom: 95vh;
   border-radius: 20px;
   display: block;
@@ -259,5 +272,8 @@ html,body
   }
   .landingBox{
     display: block !important;
+  }
+  .arrow{
+    display: none;
   }
 }
