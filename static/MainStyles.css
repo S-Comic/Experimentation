@@ -9,38 +9,150 @@ html,body
 
 .spacer { margin-top: 50px; }
 
+:root{
+  --themecolor: #8792ff;
+}
+.scrollLock{
+  position: fixed;
+  width: 100%;
+  z-index: -1;
+  top: 0;
+}
+.contentContainer{
+  background-color: white;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 95vh;
+  border-radius: 20px;
+  display: block;
+  z-index: 30;
+  -webkit-box-shadow: 5px 5px 23px 1px rgba(0,0,0,0.42);
+  box-shadow: 5px 5px 23px 1px rgba(0,0,0,0.42);
+  height: auto;
+}
+
+.landingHeader::before{
+  filter: blur(1px);
+}
+.headerRow{
+  padding-top: 40vh;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  border-bottom: 3px solid white;
+}
+.landingHeader h1{
+  font-size: 60px;
+  color: white;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  letter-spacing: 8px;
+}
+.headerSocial{
+  margin-right: 30%;
+  margin-left: 30%;
+  transition: 1;
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  flex-direction: row;
+}
+.headerSocial img{
+  height: auto;
+  transition: all 0.5s ease-in-out;
+  width: 30%;
+  margin-left: 35%;
+  margin-right: 35%;
+  padding: 5px;
+  float: left;
+}
+.headerSocial img:hover{
+  margin-top: 15px;
+}
+.icon{
+  width: 33.3%;
+}
+.landingHeader{
+  height: 100vh;
+  display: block;
+  margin: 0;
+  background: linear-gradient(270deg, #87dcff, #8792ff, #cc87ff, #ff87c3);
+background-size: 800% 800%;
+
+-webkit-animation: AnimationName 19s ease infinite;
+-moz-animation: AnimationName 19s ease infinite;
+animation: AnimationName 19s ease infinite;
+}
+  @-webkit-keyframes AnimationName {
+      0%{background-position:87% 0%}
+      50%{background-position:14% 100%}
+      100%{background-position:87% 0%}
+  }
+  @-moz-keyframes AnimationName {
+      0%{background-position:87% 0%}
+      50%{background-position:14% 100%}
+      100%{background-position:87% 0%}
+  }
+  @-o-keyframes AnimationName {
+      0%{background-position:87% 0%}
+      50%{background-position:14% 100%}
+      100%{background-position:87% 0%}
+  }
+  @keyframes AnimationName {
+      0%{background-position:87% 0%}
+      50%{background-position:14% 100%}
+      100%{background-position:87% 0%}
+  }
+
+.landingBox{
+  background-color: none;
+  width: auto;
+}
+
+.landingBox h1{
+  font-family: 'Raleway', sans-serif;
+  font-size: 60px;
+  text-align: center;
+}
 /* --- CONTAINER--- */
 
 .container{
+  padding-top: 30px;
   padding-left: 15%;
   padding-right: 15%;
+  padding-bottom: 70px;
 }
 
+.container h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 100px;
+  font-weight: 300;
+}
 .container h2 {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 80px;
-  font-weight: bold;
+  font-weight: 300;
 }
 
 .container h3{
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 40px;
-  border-bottom: 3px solid #32A3FF;
+  font-weight: 300;
+  border-bottom: 3px solid var(--themecolor);
 }
 
 .container p{
-  font-family: 'News Cycle', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 20px;
+  font-weight: 300;
 }
 
 .container a{
-  color: #32A3FF;
+  color: var(--themecolor);
   text-decoration:none;
 }
 
-.container span{
-  color: darkgrey;
-}
 
 /* --- HEADER --- */
 
@@ -63,10 +175,10 @@ html,body
 }
 
 .main-header p{
-  font-family: 'News Cycle', sans-serif;
+  font-family: 'Raleway', sans-serif;
   float: right;
   padding-left: 10px;
-  border-bottom: 3px solid #32A3FF;
+  border-bottom: 3px solid var(--themecolor);
   padding-right: 10px;
   font-size: 30px;
   margin: 0px;
@@ -78,7 +190,7 @@ html,body
 
 .header-container p:hover{
   color: white;
-  background-color: #32A3FF;
+  background-color: var(--themecolor);
   transition: all 0.3s ease 0s;
 }
 
@@ -118,7 +230,7 @@ html,body
 
 .footer p{
   color: #5f5f5f;
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Raleway', sans-serif;
   line-height: 50%;
 }
 
@@ -194,8 +306,31 @@ html,body
     display: none;
   }
 }
-@media screen and (max-width: 800px){
+@media screen and (max-width: 859px){
   .Footer_Container img{
     margin-left: 10%;
+  }
+  .contentContainer{
+    background-color: white;
+    margin-top: 100vh !important;
+    margin-left: 0;
+    border-radius: 0;
+    margin-right: 0;
+  }
+  .headerRow{
+    padding-top: 30vh;
+  }
+  .headerSocial img{
+    height: auto;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 5px;
+    padding: 5px;
+    border: 2px solid white;
+    float: left;
+  }
+  .scrollLock{
+    position: absolute;
   }
 }
