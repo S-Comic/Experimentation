@@ -3,7 +3,29 @@
 
 <!-- Credit for the gradient background goes to Ian Forrest, and credit for the social icons goes to Flaticon -->
 
+<head>
+<title>Sam - Surfing the web</title>
+<link rel="shortcut icon" type="image/x-icon" href="/static/images/Icons/SJ.ico" />
 <link rel="stylesheet" type="text/css" href="/static/MainStyles.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<script>
+$(window).scroll(function() {
+    var headscroll = $(window).scrollTop();
+
+    if (headscroll >= 500) {
+        $(".landingBox").addClass("hidden");
+        $(".footerBox").removeClass("hidden");
+    } else {
+        $(".landingBox").removeClass("hidden");
+        $(".footerBox").addClass("hidden");
+      }
+});
+</script>
+
+</head>
+
 
 <div class = "scrollLock">
 <div class = "landingHeader" style = "margin: 0; padding: 0;">
@@ -27,9 +49,25 @@
     <a href = "https://github.com/S-Comic"> <img src = "\static\images\Icons\GitHub.png" /> </a>
   </div>
 
+  <div class = "icon">
+  <a href = "mailto:samjule@outlook.com"> <img src = "\static\images\Icons\letter.png" /> </a>
+</div>
+
   </div>
 
 </div>
+
+<div class = "footerBox">
+
+  <div class = "headerRow" style = "border: none;">
+    <h1>SHOOT ME AN EMAIL</h1>
+  </div>
+
+<div class = "headerSocial">
+<a href="mailto:samjule@outlook.com" class="myButton">Click Here</a>
+</div>
+</div>
+
 </div>
 </div>
 
