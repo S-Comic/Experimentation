@@ -277,3 +277,8 @@ html,body
     display: none;
   }
 }
+
+@media screen and (max-height: 565px){
+  .arrow{
+    display: none;
+  }

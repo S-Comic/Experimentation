@@ -3,6 +3,7 @@
 
 <!-- Credit for the gradient background goes to Ian Forrest, and credit for the social icons goes to Flaticon -->
 
+<!-- HEAD TAGS -->
 <head>
 <title>Sam - Surfing the web</title>
 <link rel="shortcut icon" type="image/x-icon" href="/static/images/Icons/SJ.ico" />
@@ -10,7 +11,11 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
+<!-- SCRIPT TAGS -->
+
 <script>
+
+// Jquery that applies a class to the background depending on how far the user has scrolled
 $(window).scroll(function() {
     var headscroll = $(window).scrollTop();
 
@@ -22,6 +27,13 @@ $(window).scroll(function() {
         $(".footerBox").addClass("hidden");
       }
 });
+
+function scrollDown() {
+  document.querySelector('.scrollTo').scrollIntoView({
+  behavior: 'smooth'
+});
+}
+
 </script>
 
 </head>
@@ -58,7 +70,7 @@ $(window).scroll(function() {
   <div class = "headerSocial">
 
   <div style = "margin-top: 0px !important; width: 33.3%" class = "arrow">
-  <img style = "margin-top: 27vh; animation: 3s ease-in-out 0.2s infinite arrowBob;" src = "\static\images\Icons\Arrow.png" />
+  <a style = "cursor: pointer;" onclick="scrollDown()"><img style = "margin-top: 27vh; animation: 3s ease-in-out 0.2s infinite arrowBob;" src = "\static\images\Icons\Arrow.png" /></a>
   </div>
 </div>
 
@@ -80,7 +92,6 @@ $(window).scroll(function() {
 
 <div class = "contentContainer">
   <div class = "container">
-
     <h3>Introduction</h3>
 
   <p>I'm Samuel Jule, a year 13 student currently studying for A-Levels at Hautlieu.
@@ -88,6 +99,8 @@ $(window).scroll(function() {
   even remotely technology related. I'm proficient in python, CSS and HTML, and I'm learning
   Javascript to further my knowledge. I've learnt these languages by working on projects in my
   own time, and by collaborating with others. Whenever I have free time, I'll have an IDE open.</P>
+
+  <div class = "scrollTo"></div>
 
   <h3>Education</h3>
   <p>
