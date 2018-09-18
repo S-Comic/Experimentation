@@ -42,13 +42,13 @@ html,body
   height: 100vh;
   display: block;
   margin: 0;
-  background: linear-gradient(270deg, #b652c9, #f4655a, #efac58, #78b64a, #529acf);
-  background-size: 1000% 1000%;
+  background: linear-gradient(90deg, #fbc2eb, #a6c1ee, #f68084, #fccb90, #d57eeb);
+  background-size: 1200% 1200%;
 
-  -webkit-animation: AnimationName 30s ease infinite;
-  -moz-animation: AnimationName 30s ease infinite;
-  -o-animation: AnimationName 30s ease infinite;
-  animation: AnimationName 30s ease infinite;
+  -webkit-animation: AnimationName 40s linear infinite;
+  -moz-animation: AnimationName 40s linear infinite;
+  -o-animation: AnimationName 40s linear infinite;
+  animation: AnimationName 40s linear infinite;
 }
 
 @-webkit-keyframes AnimationName {
