@@ -171,11 +171,11 @@ html,body
 
 .contentContainer{
   background-color: white;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 15%;
+  margin-right: 15%;
   margin-top: 101vh;
   margin-bottom: 95vh;
-  border-radius: 20px;
+  border-radius: 60px;
   display: block;
   z-index: 30;
   -webkit-box-shadow: 5px 5px 23px 1px rgba(0,0,0,0.42);
@@ -212,6 +212,12 @@ html,body
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
   font-weight: 300;
+}
+
+.darkFilter{
+  filter: grayscale(44%);
+-webkit-filter: grayscale(44%);
+-moz-filter: grayscale(44%);
 }
 
 /* MOBILE */
