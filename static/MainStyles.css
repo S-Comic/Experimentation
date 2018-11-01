@@ -42,6 +42,15 @@ html,body
   height: 100vh;
   display: block;
   margin: 0;
+  position: relative;
+}
+
+.landingHeader::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0; left: 0;
   background: linear-gradient(90deg, #fbc2eb, #a6c1ee, #f68084, #fccb90, #d57eeb);
   background-size: 1200% 1200%;
 
@@ -49,6 +58,7 @@ html,body
   -moz-animation: AnimationName 40s linear infinite;
   -o-animation: AnimationName 40s linear infinite;
   animation: AnimationName 40s linear infinite;
+  filter: brightness(70%);
 }
 
 @-webkit-keyframes AnimationName {
@@ -87,7 +97,8 @@ html,body
 }
 
 .hidden{
-  display: none !important;
+  height: 0 !important;
+  overflow: hidden;
 }
 
 .headerSocial{
@@ -119,6 +130,14 @@ html,body
 .landingBox{
   background-color: none;
   width: auto;
+  opacity: 0;
+  position: relative;
+  animation: fade-in 3s forwards 1s;
+}
+
+@keyframes fade-in {
+  0%   { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 .landingBox h1{
@@ -132,6 +151,7 @@ html,body
 .footerBox{
   background-color: none;
   width: auto;
+  position: relative;
 }
 
 .footerBox h1{
@@ -259,7 +279,7 @@ html,body
   }
   .landingBox h1{
     font-family: 'Raleway', sans-serif;
-    font-size: 80px;
+    font-size: 100px;
     text-align: center;
   }
   .container h3{
